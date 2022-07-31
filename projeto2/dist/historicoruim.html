@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Easy Comex</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+  <div class="leftbox">
+    <nav>
+      <img src="./logo.png" id="logo"> </img>
+      <a id="profile"> <i class="fas fa-user"></i> </a>
+      <a id="back" href="./index.html"> <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> </a>
+      <a id="sign-out"> <i class="fas fa-sign-out-alt"></i> </a>
+    </nav>
+  </div>
+  <div class="rightbox">
+    
+    <div class="rb-container">
+      <h1>Histórico da Carga</h1>
+      <ul class="rb">
+        <li class="ola" ng-repeat="itembx">
+          
+          <div class="timestamp">
+            01/06/2022
+          </div>
+          <div class="item-title">Em trânsito</div>
+          <div class="item-saida">Data de saída: 20/08/2022</div>
+          <div class="item-chegada">Data prevista para chegada: 09/09/2022</div>
+          <div class="item-dolar">Taxa SISCOMEX: UR$ 5,20</div>
+          <div class="item-cif">CIF: R$ 336.960,00</div>
+          <div class="item-imposto">Imposto: R$ 50.544,00</div>
+          
+        </li>
+        <li class="rb-item" ng-repeat="itembx">
+        <div class="timestamp">
+          29/06/2022
+        </div>
+        <div class="item-title">Previsão de Atracação</div>
+        <div class="item-chegada">Data prevista para chegada: 09/09/2022</div>
+        </li>
+
+        <li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            01/07/2022
+          </div>
+          <div class="item-title">Atracação</div>
+          <div class="item-chegada">Data prevista para chegada: 09/10/2022</div>
+          <div class="item-txportuaria">Taxa Portuárias: R$ 2.500,00</div>          
+          </li>
+
+          <li class="rb-item" ng-repeat="itembx">
+            <div class="timestamp">
+              02/08/2022
+            </div>
+            <div class="item-title">Recepção</div>
+            <div class="item-chegada">Data prevista para chegada: 09/08/2022</div>
+            </li>
+
+            <li class="rb-item" ng-repeat="itembx">
+              <div class="timestamp">
+                08/08/2022
+              </div>
+              <div class="item-title">Inspeção Física</div>
+              <div class="item-chegada">Data prevista para chegada: 15/08/2022</div>
+             </li>
+             <li>
+              <div class="timestamp">
+                08/08/2022
+              </div>
+              <div class="item-title">Custo atual</div>
+              <div class="item-chegada">Custo estimado: R$ 390.004,00</div>
+             <div class="progress-bar"> 
+               <div> </div>
+             </div>
+          <P class="observacao">* O custo ainda está em análise</P>
+             </li>
+  
+      </ul>
+
+
+
+    </div>
+  </div>
+</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js'></script>
+<script src='https://code.jquery.com/jquery-3.5.0.slim.js'></script>
+</body>
+</html>
